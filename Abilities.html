@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gameplan - Mina Ha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Mina Ha</a>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="Abilities.html">Abilities</a>
+            <a href="Gameplan.html">Gameplan</a>
+            <a href="Build.html">Build</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="title-row">
+            <h2>About the abilities</h2>
+                <button onclick="togglegrids()">Show Abilities</button>
+        </div>
+
+        <div class="grid" id="show-grid" style="display: none;">
+            <div class="cell">
+                <img src="https://cdn.deadlock.wiki/thumb/Rake.png/90px-Rake.png" alt="Rake">
+                <div class="cell-text">
+                    <h3>Rake</h3>
+                    <p>Active: Slash with your umbrella, dealing  spirit damage, increasing with their missing health. Receive a  heal for every target killed.</p>
+                    <p>Passive: Holding Zoom / alt-fire causes you to briefly float.</p>
+                    <p>Rake executes non-heroes below 60 health.</p>
+                </div>
+            </div>
+            <div class="cell">
+                <img src="https://cdn.deadlock.wiki/thumb/Sanguine_Retreat.png/90px-Sanguine_Retreat.png" alt="Sanguine Bats">
+                <div class="cell-text">
+                    <h3>Sanguine Retreat</h3>
+                    <p>Briefly disperse, becoming untargetable and flying to a target location</p>
+                    <p>Can be recast within a brief window.</p>
+                </div>
+            </div>
+            <div class="cell">
+                <img src="https://cdn.deadlock.wiki/thumb/Love_Bites.png/90px-Love_Bites.png" alt="love bites">
+                <div class="cell-text">
+                    <h3>Love Bites</h3>
+                    <p>Your bullets apply additional  spirit damage. Dealing damage with your abilities builds up to a vicious bite, dealing a burst of  bonus spirit damage.</p>
+                </div>
+            </div>
+            <div class="cell">
+                <img src="https://cdn.deadlock.wiki/thumb/Nox_Nostra.png/90px-Nox_Nostra.png" alt="Nox Nostra">
+                <div class="cell-text">
+                    <h3>Nox Nostra</h3>
+                    <p>Active: Unleash a cloud of bats that seek out targets, each dealing  spirit damage and applying  Silence.</p>
+                    <p>Passive: Triggering Love Bites against heroes permanently increases the number of bats released</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Read the <a href="https://deadlock.wiki/Mina" target="_blank">wiki </a> for more</p>
+        <p>
+            <a href="index.html" class="active">Home</a>
+            <a href="Abilities.html">Abilities</a>
+            <a href="Gameplan.html">Gameplan</a>
+            <a href="Build.html">Build</a>
+        </p>
+    </footer>
+    <script src="interactive button.js"></script>
+</body>
+</html>

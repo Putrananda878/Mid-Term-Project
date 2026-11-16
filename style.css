@@ -1,0 +1,218 @@
+:root {
+    --bg-color: #121212;
+    --card-color: #1e1e1e;
+    --text-color: #f5f2eb;
+    --muted-color: #a0a0a0;
+    --accent-color: red;
+    --border-color: #333333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+/*Header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #0c0c0c;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.logo {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+nav a {
+    color: var(--muted-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 25px;
+    transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--accent-color);
+}
+
+/*Home page*/
+.hero {
+    background: url('https://cdn.deadlock.wiki/thumb/Mina_Render.png/1200px-Mina_Render.png') top/cover;
+    padding: 100px 50px;
+}
+
+.hero-box {
+    background-color: rgba(0, 0, 0, 0.75);
+    max-width: 600px;
+    padding: 30px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.hero-box h1 {
+    font-size: 48px;
+    margin: 0 0 15px 0;
+}
+
+.hero-box p {
+    color: var(--muted-color);
+    margin: 0;
+}
+
+/*Contents*/
+section {
+    padding: 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 34px;
+    color: var(--accent-color);
+    margin-top: 0;
+}
+
+p {
+    color: var(--muted-color);
+}
+
+ul, ol {
+    color: var(--muted-color);
+    line-height: 2;
+}
+
+a {
+    color: var(--accent-color);
+}
+
+/*Text and image*/
+.two-column {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.two-column div {
+    flex: 1;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+/*grid*/
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.cell {
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: border-color 0.3s;
+}
+
+.cell:hover {
+    border-color: var(--accent-color);
+}
+
+.cell img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.cell-text {
+    padding: 15px 20px;
+}
+
+.cell-text h3 {
+    margin: 0 0 5px 0;
+}
+
+.cell-text p {
+    margin: 0;
+}
+
+/*Buttons*/
+button {
+    background-color: transparent;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    padding: 8px 18px;
+    font-size: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+    color: #000000;
+}
+
+.title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/*Footer*/
+footer {
+    background-color: #0c0c0c;
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid var(--border-color);
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/*Small screens*/
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+    nav a {
+        margin: 0 10px;
+    }
+    .hero {
+        padding: 50px 20px;
+    }
+    section {
+        padding: 30px 20px;
+    }
+    .two-column {
+        flex-direction: column;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
